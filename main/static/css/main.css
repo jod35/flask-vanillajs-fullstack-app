@@ -1,0 +1,57 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: dodgerblue;
+}
+
+nav a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form{
+    width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+}
+.form-group{
+    padding: 10px;
+}
+.form-control{
+    width: 100%;
+    padding: 5px;
+}
+.mybtn{
+    padding: 20px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    font-weight: bold;
+}
+.loading{
+    text-align: center;
+}
+.table{
+    width: 40%;
+    margin: auto;
+}
+.table thead {
+    color: white;
+    background-color: dodgerblue;
+    padding: 20px;
+}
+.table th{
+    padding: 20px;
+}
+.delete{
+    color: red;
+    text-decoration: none;
+}

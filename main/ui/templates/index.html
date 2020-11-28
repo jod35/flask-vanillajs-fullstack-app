@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="form">
+    <br>
+    <h3>Add Student Data</h3>
+    <form action="" method="POST">
+        <div class="form-group">
+            <p>Name</p>
+            <input type="text" name="name" id="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <p>Age</p>
+            <input type="text" name="age" id="age" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Send Data" class="mybtn">
+        </div>
+    </form>
+</div>
+
+<div class="loading">
+    <img src="static/img/loading.gif" alt="">
+    <h1>
+        <span class="name"></span> Saving
+    </h1>
+</div>
+{% endblock content %}
+    

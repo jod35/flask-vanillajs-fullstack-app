@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="table">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>id</th>
+            </thead>
+            <tbody>
+                
+                {% for st in students %}
+                    <tr>
+                        <td>{{st.id}}</td>
+                        <td>{{st.name}}</td>
+                        <td>{{st.age}}</td>
+                        <td><a href="#" class="delete">DELETE</a></td>
+                        <td><a href="/update/{{st.id}}">UPDATE</a></td>
+                    </tr>
+                {% endfor %}
+                    
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
+    
