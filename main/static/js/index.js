@@ -1,6 +1,7 @@
 const dataInputForm=document.querySelector('form');
 const loadingSpinner=document.querySelector('.loading');
 const nameSpan=document.querySelector('.name');
+const messageSection=document.querySelector('.message');
 const API_URL='/api/'
 
 
@@ -32,11 +33,18 @@ dataInputForm.addEventListener('submit',(event)=>{
         })
      
        .then(data=>{
+           
+           setTimeout(()=>{
+                            messageSection.style.display="";
+                        },2000)
            dataInputForm.reset();
-           console.log(data.student.name);
            dataInputForm.style.display="";
-           nameSpan.innerHTML=data['student']['name'];
+           
+           setTimeout(() => {
+               messageSection.style.display="none";
+           }, 1000);
            loadingSpinner.style.display="none";
+
         })
 
     event.preventDefault();
